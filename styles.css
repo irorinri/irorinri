@@ -26,3 +26,23 @@ nav a {
 nav a:hover {
   background-color: #555;
 }
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* 画像間のスペース */
+  padding: 20px;
+}
+
+.image-gallery img {
+  max-width: 200px; /* 画像の最大幅 */
+  height: auto; /* アスペクト比を維持 */
+  border-radius: 10px; /* 角を丸める */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 影を追加 */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* ホバー時のアニメーション */
+}
+
+.image-gallery img:hover {
+  transform: scale(1.1); /* ホバー時に少し拡大 */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* ホバー時に影を強調 */
+}
